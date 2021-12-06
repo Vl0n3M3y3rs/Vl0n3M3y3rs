@@ -95,6 +95,17 @@
 }
 
 @media screen and (max-width: 950px) {
+
+    .section-one nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-one, .section-one .content {
+        height: 100%;
+        align-items: center;
+    }
+
     .section-one nav ul,.section-one li,.section-one a {
         display: none;
     }
@@ -184,7 +195,7 @@
 @media screen and (max-width: 750px) {
 
     .section-two, .section-two .content {
-        height: 150vh;
+        height: 100%;
     }
 
     .section-two .content p {
@@ -282,6 +293,10 @@
 }
 
 @media screen and (max-width: 1360px) {
+    .section-fo, .section-fo .content {
+        height: 100%;
+    }
+
     .section-fo p {
         margin: 0;
         padding: 0;
@@ -296,9 +311,10 @@
 .section-seven {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     height: 100vh;
     background-color: rgb(60,84,154);
-    position:relative;
+    min-height: 100%; 
 }
 
 .section-seven .content {
@@ -387,9 +403,9 @@
     display: flex;
     justify-content: center;
     background-color: rgb(52,75,142);
-    position:absolute; /* добавили */
 	bottom:0; /* добавили */
     width: 100%;
+    margin-bottom: -50px;
 }
 
 .footer-seven ul {
@@ -442,6 +458,11 @@ h5 {
 }
 
 @media screen and (max-width: 1360px) {
+
+    .section-seven, .section-seven .content {
+        height: 100%;
+    }
+
     .footer-seven a {
         font-size: medium;
     }
@@ -452,6 +473,10 @@ h5 {
 }
 
 @media screen and (max-width: 900px) {
+
+    .section-seven, .section-seven .content {
+        height: 100%;
+    }
 
     .footer-seven li {
         padding: 10px 10px;;
@@ -487,6 +512,7 @@ h5 {
     .form-seven {
         display: flex;
         justify-content: center;
+        width: 300px;
     }
 
     .form-seven .button {
