@@ -92,6 +92,7 @@
     box-shadow: 0 5px 0 rgb(199, 114, 74);
     font-family: 'Kanit', sans-serif;
     font-size: large;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 950px) {
@@ -108,6 +109,10 @@
 
     .section-one nav ul,.section-one li,.section-one a {
         display: none;
+    }
+
+    .section-one .content #hi {
+        width: 300px;
     }
 }
 /* Section Two */
@@ -133,6 +138,7 @@
     font-stretch: wider;
     text-transform: uppercase;
     font-stretch: extra-condensed;
+    margin-top: 30px;
 }
 
 .section-two .content p {
@@ -227,6 +233,11 @@
     }
 }
 
+/* Section Three */
+
+.section-three {
+    height: 100vh;
+}
 
 /* Section Fo */
 
@@ -377,6 +388,8 @@
     box-shadow:4px 4px 10px rgba(0,0,0,0.06);
     border-radius: 15px;
     padding-left: 15px;
+    min-height: 100px;
+    max-height: 500px;
 }
 
 .form-seven__elements {
@@ -442,6 +455,17 @@
     box-shadow: 0 5px 0 #3C93D5;
     font-family: 'Kanit', sans-serif;
     font-size: large;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(10, 189, 248);
+}
+
+button:active {
+    outline: none;
+    box-shadow: 0 0 0 3px lightskyblue;
+    background-color: #3C93D5;
 }
 
 .section-seven .button, a, h2 {
@@ -495,13 +519,17 @@ h5 {
         margin: 0;
     }
 
+    .form-seven #name, #E-mail {
+        width: 350px;
+    }
+
     .form-seven #message {
-        width: 400px;
+        width: 350px;
     }
 
     .content__input {
         padding: 0;
-        width: 400px;
+        width: 350px;
         padding: 15px;
     }
 
@@ -512,11 +540,11 @@ h5 {
     .form-seven {
         display: flex;
         justify-content: center;
-        width: 300px;
+        width: 350px;
     }
 
     .form-seven .button {
-        width: 400px;
+        width: 350px;
     }
 
     .section-seven p {
