@@ -1,0 +1,554 @@
+*, *::after, *::before, *:before, *:after {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Mukta:wght@200&display=swap');
+
+/* Section One */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Mukta:wght@200&display=swap');
+
+.section-one  {
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(134,80,156);
+}
+
+.section-one .content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one #hi {
+    text-align: center;;
+    align-items: center;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.section-one nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.section-one nav .logo {
+    color: white;
+    margin: 30px 0;
+    margin-left: 30px;
+    font-family: 'Lobster', sans-serif;
+    font-size: 45px;
+    font-stretch: ultra-expanded;
+}
+
+.section-one nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-one nav li {
+    margin: 50px 0;
+    margin-right: 80px;
+}
+
+.section-one nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.section-one .main-block {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one__button {
+    color:white;
+    background-color: rgb(235,125,74);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 0 5px 0 rgb(199, 114, 74);
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+
+    .section-one nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-one, .section-one .content {
+        height: 100%;
+        align-items: center;
+    }
+
+    .section-one nav ul,.section-one li,.section-one a {
+        display: none;
+    }
+
+    .section-one .content #hi {
+        width: 300px;
+    }
+}
+/* Section Two */
+
+.section-two {
+    background-color: rgb(23,193,164);
+    height: 90vh;
+}
+
+.section-two .content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-two .content h2 {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: calc(1vw + 3vh);
+    line-height: 1.5;
+    font-stretch: wider;
+    text-transform: uppercase;
+    font-stretch: extra-condensed;
+    margin-top: 30px;
+}
+
+.section-two .content p {
+    width: 750px;
+    text-align: center;
+}
+
+.section-two .line {
+    border: 2px solid black;
+    margin-bottom: 30px;
+    opacity: 0.1;
+}
+
+.section-two .content .info-block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.section-two .content .info-block .info-block__elements {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px 30px;
+    text-align: center;
+}
+
+.section-two .content .info-block .info-block__elements .bx-rocket, .bxs-flag-alt, .bx-pencil, .bx-ghost {
+    font-size: 150px;
+}
+
+.section-two .content .info-block .info-block__elements h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: calc(0.5vw + 2vh);
+    line-height: 1.5;
+    font-stretch: wider;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.section-two .content .info-block .info-block__elements p {
+    font-size: calc(0.5vw + 0.5vh);
+    margin-top: 10px;
+    width: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-two .content .info-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-two .content .info-block .info-block__elements p {
+        font-size: calc(0.5vw + 1vh);
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .section-two, .section-two .content {
+        height: 100%;
+    }
+
+    .section-two .content p {
+        width: 550px;
+    }
+
+    .section-two .content .info-block {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .section-two .content .info-block .info-block__elements .bx-rocket, .bxs-flag-alt, .bx-pencil, .bx-ghost {
+        font-size: 85px;
+    }
+
+    .section-two .content .info-block .info-block__elements h3 {
+        font-family: 'Kanit', sans-serif;
+        font-size: calc(0.5vw + 2vh);
+        line-height: 1.5;
+        font-stretch: wider;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-two .content p {
+        width: 400px;
+    }
+}
+
+/* Section Three */
+
+.section-three {
+    height: 100vh;
+}
+
+/* Section Fo */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+.section-fo .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 55vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.section-fo h2 {
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-size: calc(1vw + 2vh);
+    line-height: 1.5;
+    font-stretch: wider;
+}
+
+.section-fo .line {
+    border: 2px solid gray;
+    opacity: 0.1;
+}
+
+.section-fo .line {
+    border: 2px solid black;
+}
+
+.section-fo p {
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 100;
+    margin-top: 15px;
+    text-align: center;
+    font-size: calc(0.5vw + 1vh);
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.section-fo ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.section-fo li {
+    padding: 30px;
+    margin: 0 60px;
+}
+
+.section-fo a {
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+@media screen and (max-width: 1360px) {
+    .section-fo, .section-fo .content {
+        height: 100%;
+    }
+
+    .section-fo p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-fo ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Section Seven */
+.section-seven {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: rgb(60,84,154);
+    min-height: 100%; 
+}
+
+.section-seven .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.section-seven .form-seven {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-seven .line {
+    border: 2px solid black;
+}
+
+.form-seven input {
+    color: white;
+}
+
+.section-seven h2 {
+    padding-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: calc(1vw + 3vh);
+    line-height: 1.5;
+    font-stretch: wider;
+}
+
+.section-seven p {
+    padding-bottom: 60px;
+}
+
+.section-seven .content h2, p, h3, ::placeholder {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-seven #name, #E-mail {
+    padding: 0;
+    width: 400px;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.form-seven #name {
+    margin-right: 45px;
+}
+
+.form-seven #message {
+    margin-top: 30px;
+    width: 850px;
+    height: 200px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    padding-left: 15px;
+    min-height: 100px;
+    max-height: 500px;
+}
+
+.form-seven__elements {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+  
+.content__input {
+    background-color: rgb(39,58,114);
+    resize: vertical;
+    border: 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    padding:10px;
+    color:white;
+    font-size: large;
+}
+.footer-seven {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(52,75,142);
+	bottom:0; /* добавили */
+    width: 100%;
+    margin-bottom: -50px;
+}
+
+.footer-seven ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer-seven li {
+    padding: 60px 80px;
+}
+
+.footer-seven a {
+    font-size: x-large;
+}
+
+.footer-seven a {
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    background-color: rgb(48,186,232); /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 0 5px 0 #3C93D5;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(10, 189, 248);
+}
+
+button:active {
+    outline: none;
+    box-shadow: 0 0 0 3px lightskyblue;
+    background-color: #3C93D5;
+}
+
+.section-seven .button, a, h2 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+}
+
+.section-seven p {
+    font-family: 'Mukta', 'sans-serif';
+}
+
+h5 {
+    color: aqua;
+}
+
+@media screen and (max-width: 1360px) {
+
+    .section-seven, .section-seven .content {
+        height: 100%;
+    }
+
+    .footer-seven a {
+        font-size: medium;
+    }
+
+    .footer-seven li {
+        padding: 60px 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .section-seven, .section-seven .content {
+        height: 100%;
+    }
+
+    .footer-seven li {
+        padding: 10px 10px;;
+    }
+
+    .nameAndMail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-seven #name {
+        margin: 0;
+    }
+
+    .form-seven #name, #E-mail {
+        width: 350px;
+    }
+
+    .form-seven #message {
+        width: 350px;
+    }
+
+    .content__input {
+        padding: 0;
+        width: 350px;
+        padding: 15px;
+    }
+
+    .form-seven__elements #name {
+        margin-bottom: 25px;
+    }
+
+    .form-seven {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+    }
+
+    .form-seven .button {
+        width: 350px;
+    }
+
+    .section-seven p {
+        text-align: center;
+        align-items: center;
+    }
+}
