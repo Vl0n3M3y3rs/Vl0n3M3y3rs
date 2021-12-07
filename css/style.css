@@ -1,6 +1,5 @@
 *, *::after, *::before, *:before, *:after {
     box-sizing: border-box;
-    border: 1px solid gray;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Mukta:wght@200&display=swap');
@@ -97,8 +96,14 @@
 }
 
 @media screen and (max-width: 576px) {
+
+    .section-one {
+        width: 100%;
+    }
+
     .section-one nav {
       max-width: 540px;
+      width: 95%;
       padding: 0;
       margin-left: auto;
       margin-right: auto;
@@ -114,6 +119,10 @@
 
     .section-one nav ul,.section-one li,.section-one a {
         display: none;
+    }
+
+    .section-one nav .logo {
+        max-width: 540px;
     }
 
     .section-one nav {
@@ -574,6 +583,10 @@ h5 {
 @media screen and (max-width: 540px) {
     .footer-seven li a {
         font-size: small;
+    }
+
+    .footer-seven li {
+        padding: 5px 5px;
     }
     
 }
