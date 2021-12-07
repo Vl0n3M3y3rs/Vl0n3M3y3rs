@@ -1,5 +1,6 @@
 *, *::after, *::before, *:before, *:after {
     box-sizing: border-box;
+    border: 1px solid gray;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Mukta:wght@200&display=swap');
@@ -95,12 +96,16 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 950px) {
-
+@media screen and (max-width: 576px) {
     .section-one nav {
-        margin: 0;
-        padding: 0;
+      max-width: 540px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
+}
+
+@media screen and (max-width: 950px) {
 
     .section-one, .section-one .content {
         height: 100%;
@@ -109,6 +114,11 @@
 
     .section-one nav ul,.section-one li,.section-one a {
         display: none;
+    }
+
+    .section-one nav {
+        margin: 0;
+        padding: 0;
     }
 
     .section-one .content #hi {
@@ -229,7 +239,7 @@
 
 @media screen and (max-width: 500px) {
     .section-two .content p {
-        width: 400px;
+        width: 350px;
     }
 }
 
@@ -316,6 +326,14 @@
     .section-fo ul {
         display: flex;
         flex-direction: column;
+    }
+
+    .section-fo h2 {
+        font-family: 'Kanit', sans-serif;
+        font-size: calc(0.5vw + 2vh);
+        line-height: 1.5;
+        font-stretch: wider;
+        text-transform: uppercase;
     }
 }
 /* Section Seven */
@@ -551,4 +569,11 @@ h5 {
         text-align: center;
         align-items: center;
     }
+}
+
+@media screen and (max-width: 540px) {
+    .footer-seven li a {
+        font-size: small;
+    }
+    
 }
