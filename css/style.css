@@ -1,6 +1,5 @@
 *, *::after, *::before, *:before, *:after {
     box-sizing: border-box;
-    border: 1px solid gray;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Mukta:wght@200&display=swap');
