@@ -1,5 +1,6 @@
 *, *::after, *::before, *:before, *:after {
     box-sizing: border-box;
+    border: 1px solid gray;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Mukta:wght@200&display=swap');
@@ -224,7 +225,7 @@
     }
 
     .section-two .content h2 {
-        margin-top: 60px;
+        margin-top: 200px;
     }
 }
 
@@ -244,6 +245,10 @@
         flex-direction: column;
         margin: 0;
         margin-bottom: 60px;
+    }
+
+    .section-two .content h2 {
+        margin-top: 60px;
     }
     
     .section-two .content .info-block .info-block__elements .bx-rocket, .bxs-flag-alt, .bx-pencil, .bx-ghost {
@@ -513,6 +518,245 @@
         margin-top: 60px;
     }
 }
+
+/* Section Five */
+
+.section-five, .section-five .content {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255,220,152);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-five .content h2, .section-five .content p {
+    color: rgb(56,54,57);
+}
+
+.section-five .content .line {
+    border: 2px solid rgb(56,54,57, 0.5);
+}
+
+.section-five .content #five-button {
+    background-color: rgb(23,193,164); /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 0 5px 0 rgb(54,154,116);
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+.section-five .content h2 {
+    margin-top: 100px;
+    color: rgb(56,54,57);
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: calc(1vw + 2vh);
+}
+
+.section-five .content p {
+    width: 750px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section-five .content ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.section-five .content ul li {
+    margin: 5px;
+    background-color: rgb(56,54,57, 0.1);
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.section-five .content ul li a {
+    text-decoration: none;
+}
+
+.section-five .content .blocks-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-five .content .blocks-items .blocks-items__elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin: 0 100px
+}
+
+.section-five .content .blocks-items .blocks-items__elements .bx-laptop {
+    font-size: 400px;
+}
+
+.section-five .content .blocks-items .blocks-items__elements h4 {
+    font-family: 'Mukta', sans-serif;
+}
+
+@media screen and (max-width: 1360px) {
+
+    .section-five, .section-five .content {
+        width: 100%;
+        height: 100%;
+    }
+    .section-five .content p {
+        width: 500px;
+    }
+
+    .section-five .content .blocks-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .section-five .content p {
+        width: 300px;
+    }
+    
+    .section-five .content .blocks-items .blocks-items__elements .bx-laptop {
+        font-size: 100px;
+    }
+
+    .section-five .content .five-button {
+        width: 100px;
+    }
+}
+
+/* Section Six */
+
+.section-six, .section-six .content {
+    background-color: rgb(215,70,129);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-six .content h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.section-six .content .line {
+    border: 2px solid black;
+    opacity: 0.1;
+}
+
+.section-six .content p {
+    margin-bottom: 30px;
+    color: white;
+    margin-top: 15px;
+}
+
+.section-six .content .content__about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-six .content .content__about .content__about_elements {
+    margin: 30px;
+}
+
+.section-six .content .content__about .content__about_elements .block-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+}
+
+
+.section-six .content .content__about .content__about_elements .block-info h3 {
+    font-size: calc(1vw + 0.5vh);
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.section-six .content .content__about .content__about_elements .block-info i {
+    font-style: normal;
+    color: rgb(250, 172, 143);
+}
+
+.section-six .content .content__about .content__about_elements .block-info p {
+    font-style: italic;
+    font-stretch: condensed;
+    color: white;
+    font-size: calc(0.5vw + 1vh);
+}
+
+.section-six .content .content__about .content__about_elements h3, .content__about_elements p, .content__about_elements i {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.section-six .content .content__about .content__about_elements .bxs-circle {
+    font-size: 150px;
+    float: left;
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1360px) {
+
+    .section-six, .section-six .content {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-six .content .content__about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-six .content .content__about .content__about_elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-six .content .content__about .content__about_elements .bxs-circle {
+        float: top;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .section-six .content .content__about .content__about_elements .block-info h3 {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-six .content .content__about .content__about_elements .block-info p {
+        width: 325px;
+    }
+}
+
 /* Section Seven */
 .section-seven {
     display: flex;
@@ -558,7 +802,7 @@
     padding-bottom: 60px;
 }
 
-.section-seven .content h2, p, h3, ::placeholder {
+.section-seven .content h2, .section-seven .content p,  .section-seven .contenth3, .section-seven .content ::placeholder {
     color: white;
     display: flex;
     justify-content: center;
