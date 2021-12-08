@@ -210,10 +210,21 @@
     .section-two .content .info-block {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 60px;
     }
 
     .section-two .content .info-block .info-block__elements p {
         font-size: calc(0.5vw + 1vh);
+    
+    }
+
+    .section-two {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section-two .content h2 {
+        margin-top: 60px;
     }
 }
 
@@ -221,6 +232,7 @@
 
     .section-two, .section-two .content {
         height: 100%;
+        width: 100%;
     }
 
     .section-two .content p {
@@ -231,6 +243,7 @@
         display: flex;
         flex-direction: column;
         margin: 0;
+        margin-bottom: 60px;
     }
     
     .section-two .content .info-block .info-block__elements .bx-rocket, .bxs-flag-alt, .bx-pencil, .bx-ghost {
@@ -254,8 +267,161 @@
 
 /* Section Three */
 
-.section-three {
-    height: 100vh;
+.section-three, .section-three .content {
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231,242,248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-three .content .TeamHello {
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-size: calc(1vw + 2vh);
+    line-height: 1.5;
+    font-stretch: wider;
+    color: rgb(61,72,104);
+}
+
+.section-three .content p {
+    color: rgb(61,72,104);
+    font-size: 15px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-three .content .line {
+    border: 2px solid rgb(61,72,104);
+    opacity: 0.1;
+    margin-bottom: 30px;
+}
+
+.section-three .content .team-info {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section-three .content .team-info .team-info__elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 0 60px;
+}
+
+.section-three .content .team-info .team-info__elements .bxs-basketball {
+    font-size: 200px;
+    margin-bottom: 30px;
+}
+
+.section-three .content .team-info .team-info__elements h3 {
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-stretch: wider;
+    font-size: calc(0.5vw + 1.5vh);
+    line-height: 1.5;
+    font-stretch: ultra-condensed;
+    color: rgb(61,72,104);
+}
+
+.section-three .content .team-info .team-info__elements .position {
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-stretch: wider;
+    font-size: calc(0.5vw + 0.5vh);
+    line-height: 1.5;
+    font-stretch: ultra-condensed;
+    /* color: rgb(109, 133, 204); */
+    color: lightskyblue;
+}
+
+.section-three .content .team-info .team-info__elements .teammate {
+    font-family: 'Kanit', sans-serif;
+    font-stretch: wider;
+    font-size: calc(0.5vw + 1vh);
+    line-height: 1.5;
+    font-stretch: ultra-condensed;
+    color: rgb(61,72,104);
+    width: 200px;
+    margin: 20px 0;
+}
+
+.section-three .content .team-info .team-info__elements .team-info__links i {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(61,72,104,0.2); 
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .section-three .content .TeamHello {
+        margin-top: 60px;
+    }
+
+    .section-three, .section-three .content {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-three .content .team-info {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        margin-bottom: 60px;
+    }
+
+    .section-three .content .team-info .team-info__elements {
+        padding: 0;
+    }
+
+    .section-three .content .team-info .team-info__elements .position,  .team-info__elements .teammate {
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+
+
+    .section-three .content .team-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-three .content .team-info .team-info__elements h2 {
+        margin: 0;
+        padding: 0;
+        font-size: calc(1vw + 1vh);
+    }
+
+    .section-three .content .team-info .team-info__elements p {
+        width: 475px;
+    }
+
+    .section-three .content .team-info .team-info__elements .position, .team-info__elements .teammate {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .section-three .content p {
+        width: 300px;
+    }
 }
 
 /* Section Fo */
@@ -335,6 +501,7 @@
     .section-fo ul {
         display: flex;
         flex-direction: column;
+        margin-bottom: 60px;
     }
 
     .section-fo h2 {
@@ -343,6 +510,7 @@
         line-height: 1.5;
         font-stretch: wider;
         text-transform: uppercase;
+        margin-top: 60px;
     }
 }
 /* Section Seven */
@@ -556,7 +724,7 @@ h5 {
 
     .content__input {
         padding: 0;
-        width: 350px;
+        width: 300px;
         padding: 15px;
     }
 
@@ -571,7 +739,7 @@ h5 {
     }
 
     .form-seven .button {
-        width: 350px;
+        width: 300px;
     }
 
     .section-seven p {
