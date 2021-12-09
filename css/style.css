@@ -627,6 +627,11 @@
         width: 100%;
     }
 
+    .section-five .content ul li {
+        margin: 5px;
+        padding: 10px 20px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -635,11 +640,17 @@
     }
     
     .section-five .content .blocks-items .blocks-items__elements .bx-laptop {
-        font-size: 100px;
+        font-size: 145px;
     }
 
     .section-five .content .five-button {
         width: 100px;
+    }
+
+    .section-five .content ul li {
+        margin: 5px;
+        padding: 10px 10px;
+        font-size: small;
     }
 }
 
