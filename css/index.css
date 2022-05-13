@@ -1,0 +1,176 @@
+@import url('root.css');
+
+.start{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.start h1{
+    margin: 50px;
+    font-size: var(--h1);
+    text-align: center;
+}
+
+.start .text_start {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#read_more{
+    display: none;
+}
+
+.text_start #more {
+    border: 0 !important;
+    outline: none;
+    cursor: default;
+    opacity: 0.7;
+}
+
+.text_start #more:hover {
+    opacity: 1;
+}
+
+.button_start {
+    border-radius: 4px;
+    background-color: var(--main-color);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.button_start span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button_start span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button_start:hover span {
+    padding-right: 25px;
+}
+  
+.button_start:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*
+    SECTION-TWO
+*/
+
+
+.info {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info_block-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_block-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.info_block-2 h2 {
+    font-size: var(--h2);
+    margin: 15px;
+}
+
+.info_block-2 #block-2-info {
+    margin: 15px;
+}
+
+.info_block-2 button {
+    margin: 15px;
+}
+
+.info_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+    padding: 15px;
+}
+
+.info_block h2 {
+    margin-bottom: 15px;
+    font-size: var(--h2);
+}
+
+.info_block p{
+    padding-left: 15px;
+}
+/* SECTION THREE */
+.feedback {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main_feedback {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.feedback h2 {
+    font-size: var(--h2);
+    text-align: center;
+}
+
+.feedback_form {
+    margin: 30px;
+}
+.feedback_media {
+    margin: 30px;
+}
